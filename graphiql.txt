@@ -1,0 +1,11 @@
+mutation{
+  createFriend(input:{
+    firstName:"hamid"
+    lastName:"shah"
+    gender:"Male"
+    email:"me@me.com"
+  }){
+    id
+    firstName
+  }
+}
