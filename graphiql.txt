@@ -9,3 +9,10 @@ mutation{
     firstName
   }
 }
+
+query{
+  getFriend(id:"47448e7bb31f912dbe81"){
+    firstName
+    lastName
+  }
+}
