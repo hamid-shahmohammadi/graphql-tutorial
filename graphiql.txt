@@ -3,16 +3,11 @@ mutation{
     firstName:"hamid"
     lastName:"shah"
     gender:"Male"
+    age:38
     email:"me@me.com"
   }){
     id
     firstName
-  }
-}
-
-query{
-  getFriend(id:"47448e7bb31f912dbe81"){
-    firstName
-    lastName
+    age
   }
 }
