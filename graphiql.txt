@@ -2,12 +2,23 @@ mutation{
   createFriend(input:{
     firstName:"hamid"
     lastName:"shah"
-    gender:"Male"
+    gender:MALE
     age:38
     email:"me@me.com"
   }){
     id
     firstName
+    gender
     age
+  }
+}
+
+
+query{
+  getFriend(id:"ab31eaf27b254ecac281"){
+    id
+    firstName
+    lastName
+    gender
   }
 }
