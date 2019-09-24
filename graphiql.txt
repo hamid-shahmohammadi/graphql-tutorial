@@ -5,20 +5,26 @@ mutation{
     gender:MALE
     age:38
     email:"me@me.com"
+    contacts:[
+      {firstName:"lolo",lastName:"yee"},
+      {firstName:"lee",lastName:"yo"}
+    ]
   }){
     id
     firstName
     gender
     age
+    contacts
   }
 }
 
 
 query{
-  getFriend(id:"ab31eaf27b254ecac281"){
+  getFriend(id:"fa11a95b02fb82578635"){
     id
     firstName
     lastName
     gender
+    contacts
   }
 }
